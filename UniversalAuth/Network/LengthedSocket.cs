@@ -71,6 +71,7 @@ namespace UniversalAuth.Network
             }
             catch (Exception e)
             {
+                Console.WriteLine("Unknown error at LengthedSocket::BeginReceive! Exception: {0}", e);
                 Close();
                 return null;
             }
